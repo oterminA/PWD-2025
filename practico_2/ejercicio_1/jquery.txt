@@ -1,0 +1,33 @@
+JQUERY
+-$('h2').css('color', 'red');  //asi llamo a un selector, si es una clase o un id lo tengo que poner igual que cuando uso css
+-tiene funciones: 
+>hide(),  oculta los elementos HTML, haciendo que dejen de afectar a la página HTML
+>show(), muestra los elementos HTML. Sólo funciona en elementos ocultos por la función hide()
+>toggle(), modifica la visibilidad de los elementos HTML en función de su propiedad de visualización CSS mediante un evento de clic.
+>fadeIn(), modifica la opacidad de los elementos HTML para que aparezcan gradualmente en la página HTML
+>fadeOut(), funciona de forma opuesta a la función fadeIn()
+>fadeToggle(), funciona de forma similar a la función toggle()
+>slideUp(), oculta elementos con una animación deslizante. Acompáñala con los parámetros de duración y de suavidad para ajustar la duración de la animación.
+>slideDown(), muestra elementos con una animación deslizante
+>slideToggle(), permite alternar entre las funciones slideUp() y slideDown() para mostrar u ocultar elementos.
+-ejemplos:
+//antes
+<p id="target">Old text</p>
+
+const content = document.getElementById( "target" );
+content.textContent = "New text";
+
+//con jquery
+$( "#target" ).text( "New text" ); //agarra el selector y con ese metodo le cambia el texto a ese <p>
+
+-metodos:
+>.before($()) / .after($()) //tengo que poner el elemento que sirve como guia para saber donde tengo que hacer los cambios
+$('#child').after($('<p />')).text('This becomes a sibling of #child'));
+$('#child').before($('<p />')).text('Same here, but this is go about #child'));
+
+>.data () //guarda informacion
+$('#wrap').data('myKey', 'myValue');
+$('#container').data({ myOtherKey : 'myOtherValue', year : 2010 });
+
+>.remove() //elimina un par clave-valor
+$('#container').removeData('myOtherKey')

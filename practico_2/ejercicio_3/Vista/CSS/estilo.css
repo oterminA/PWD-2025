@@ -1,0 +1,42 @@
+body {
+    height: 90vh;
+    background-color:rgb(189, 189, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form, #texto  {
+    background-color: rgb(175, 175, 140);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    color: white;
+}
+
+input{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#submit {
+    width: 150px;
+    background-color: azure;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color:rgb(224, 236, 236);
+    box-shadow: 0px 0px 3px 6px rgb(162, 211, 211);
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
