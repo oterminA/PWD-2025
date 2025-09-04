@@ -13,7 +13,7 @@ class controlPeliculas
             $imagen = "<img src='$dirWeb' alt='Imagen de la película' style='max-width:100px; margin:5px; border:1px solid gray'><br>";
         } else {
             $error = $_FILES['archivo']['error'];
-            $imagen = "<p style='color:red;'>⚠ Error al subir la imagen. Código de error: $error</p>";
+            $imagen = "<p style='color:red;'>Error al subir la imagen. Código de error: $error</p>";
         }
         
         
@@ -50,3 +50,4 @@ class controlPeliculas
         return $mensaje;
     }
 }
+
